@@ -5,4 +5,4 @@ use Test;
 
 plan 1;
 
-use-ok 'Bailador';
+use-ok 'HTTP::Server::Ogre';
