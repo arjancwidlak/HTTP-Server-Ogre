@@ -12,7 +12,7 @@ HTTP::Server::Ogre
 
 =head1 DESCRIPTION
 
-HTTP::Server::Ogre is not tiny nor easy to handle. He is rather a stupid ogre that handles paralell http requests
+HTTP::Server::Ogre is not tiny nor easy to handle. He is rather a stupid ogre that handles parallel http requests
 
 =head1 AUTHOR
 
