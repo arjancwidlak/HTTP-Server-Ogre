@@ -1,7 +1,9 @@
+[![Build Status](https://travis-ci.org/ufobat/HTTP-Server-Ogre.svg?branch=master)](https://travis-ci.org/ufobat/HTTP-Server-Ogre)
+
 NAME
 ====
 
-HTTP::Server::Ogre - blah blah blah
+HTTP::Server::Ogre
 
 SYNOPSIS
 ========
@@ -11,7 +13,7 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-HTTP::Server::Ogre is ...
+HTTP::Server::Ogre is not tiny nor easy to handle. He is rather a stupid ogre that handles paralell http requests
 
 AUTHOR
 ======
