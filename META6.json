@@ -21,6 +21,8 @@
     "HTTP",
     "P6W"
   ],
-  "test-depends" : [ ],
+  "test-depends" : [
+    "Path::Iterator"
+  ],
   "version" : "0.0.1"
 }
