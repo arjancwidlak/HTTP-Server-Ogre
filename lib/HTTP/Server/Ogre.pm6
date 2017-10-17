@@ -46,7 +46,7 @@ class HTTP::Server::Ogre:ver<0.0.2> {
         my $listener;
 
         if $.tls-mode {
-            use IO::Socket::Async::SSL;
+            require IO::Socket::Async::SSL;
             sub supports-alpn { IO::Socket::Async::SSL.supports-alpn };
             if $!http-mode == <2> {
                 # serve http 2 only
