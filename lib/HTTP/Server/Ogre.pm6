@@ -87,7 +87,7 @@ class HTTP::Server::Ogre:ver<0.0.2> {
                 }
 
                 my $proto = %protocols{$http-mode};
-                my $envs = $proto.read-from($conn);
+                my $envs  = $proto.read-from($conn);
 
                 whenever $envs -> %env {
                     my $promise = $.app.(%env);
