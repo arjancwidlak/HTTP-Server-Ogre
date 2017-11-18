@@ -5,7 +5,8 @@
   "build-depends" : [ ],
   "depends" : [
     "HTTP::Request::Supply",
-    "HTTP::Status"
+    "HTTP::Status",
+    "HTTP::HPACK"
   ],
   "description" : "he is not tiny nor easy to handle. He is rather a stupid ogre that handles paralell http requests",
   "license" : "Artistic-2.0",
