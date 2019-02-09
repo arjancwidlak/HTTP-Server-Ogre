@@ -8,7 +8,7 @@ constant AUTHOR = ?%*ENV<AUTHOR_TESTING>;
 if AUTHOR {
     # check for use v6;
     my @dirs = '.';
-    for Path::Finder.skip-vcs.ext(rx/ ^ ( 'p' <[lm]> 6? | t ) $ /).in(@dirs) -> $file {
+    for find(@dirs, :ext(rx/ ^ ( 'p' <[lm]> 6? | t ) $ /), :skip-vcs) -> $file {
         my @lines = $file.lines;
         my $expected_line = 0;
         if @lines[0] eq '#!/usr/bin/env perl6' {
