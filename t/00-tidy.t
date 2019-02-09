@@ -1,7 +1,7 @@
 use v6;
 use lib 'lib';
 use Test;
-use Path::Iterator;
+use Path::Finder;
 
 constant AUTHOR = ?%*ENV<AUTHOR_TESTING>;
 
@@ -9,8 +9,8 @@ if AUTHOR {
     # check for trailing spaces
     # check for tabs
     my @dirs = '.';
-    for Path::Iterator.skip-vcs.ext(rx/ ^ ( 'p' <[lm]> 6? | t ) $ /).in(@dirs) -> $file {
-        my @lines = $file.IO.lines;
+    for find(@dirs, :ext(rx/ ^ ( 'p' <[lm]> 6? | t ) $ /), :skip-vcs) -> $file {
+        my @lines = $file.lines;
         my @spaces = @lines.grep(rx/\s$/);
         is-deeply @spaces, [], "spaces at the end of $file";
 
